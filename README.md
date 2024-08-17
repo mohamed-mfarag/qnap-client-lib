@@ -19,7 +19,7 @@ This package provides a Go client for interacting with the QNAP Container Statio
 To use this package, you need to have Go installed on your system. You can install the package using `go get`:
 
 ```bash
-go get github.com/mohamed-mfarag/qnap
+go get github.com/mohamed-mfarag/qnap-client-lib
 ```
 
 ## Authentication
