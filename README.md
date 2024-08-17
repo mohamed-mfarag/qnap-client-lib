@@ -1,6 +1,10 @@
 # QNAP Container Station API Client
 
 This package provides a Go client for interacting with the QNAP Container Station API. It allows you to manage containers, applications, and volumes on your QNAP device programmatically.
+The package was build using reverse engineering for QNAP Container Station due to the unavaibility of an up to date API documenation, please consider this while using the client as code might change without notice after QNAP updates.
+
+## Supported QNAP Version
+QNAP NAS QuTS hero h5.1.8 | Container Station 3.0.7.891 (2024/05/09)
 
 ## Table of Contents
 
@@ -301,6 +305,8 @@ func main() {
 
 }
 ```
+
+To learn more about the QNAP Container Station API and how to use the client library, please refer to the [API Reference](api-reference.md) documentation.
 
 ## Contributing
 
