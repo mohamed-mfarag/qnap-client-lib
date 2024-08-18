@@ -96,6 +96,7 @@ type NewContainerSpec struct {
 	Runtime       string            `json:"runtime"`
 	Privileged    bool              `json:"privileged"`
 	Operation     string            `json:"operation"`
+	IPAddress     string            `json:"ipAddress"`
 	Devices       []Devices         `json:"devices"`
 	Volumes       []Volumes         `json:"volumes"`
 	PortBindings  []PortBindings    `json:"portbindings"`
