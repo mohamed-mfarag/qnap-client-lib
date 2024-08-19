@@ -252,8 +252,10 @@ type AppRespModel struct {
 		CPULimit       int32                    `json:"cpuLimit"`
 		MemLimit       int32                    `json:"memLimit"`
 		MemReservation int32                    `json:"memReservation"`
+		DefaultURL     DefaultURLModel          `json:"defaultURL"`
 		Containers     []AppRespContainersModel `json:"containers"`
-		Status         string                   `json:"status"`
+
+		Status string `json:"status"`
 	} `json:"data"`
 }
 
@@ -261,6 +263,15 @@ type AppRespModel struct {
 type AppRespContainersModel struct {
 	ID   string `json:"id"`
 	Name string `json:"name"`
+}
+
+type DefaultURLModel struct {
+	Port      int32  `json:"port"`
+	WebPort   int32  `json:"webPort"`
+	URL       string `json:"url"`
+	Container string `json:"container"`
+	Protocol  string `json:"protocol"`
+	Service   string `json:"service"`
 }
 
 // TaskModel represents the structure for a task.
